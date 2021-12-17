@@ -9,7 +9,10 @@
           "transform-remove-console"
         ]
       }
-    }
+    },
+    "presets": [
+      "@babel/preset-react"
+    ]
   },
   "private": true,
   "importSort": {
@@ -87,6 +90,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.1",
