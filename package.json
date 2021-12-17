@@ -1,6 +1,6 @@
 {
   "proxy": "http://localhost:3001",
-  "name": "O.HI.O Client",
+  "name": "o-hi-o-client",
   "version": "0.1.0",
   "babel": {
     "env": {
