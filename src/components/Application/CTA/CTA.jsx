@@ -2,6 +2,7 @@ import React from 'react';
 
 import Button from '../../Global/Button/Button.jsx';
 import classes from './CTA.module.scss';
+
 const CTA = () => {
   return (
     <div className={classes.ctaLayout}>
