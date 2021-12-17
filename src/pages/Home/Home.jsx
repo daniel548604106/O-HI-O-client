@@ -101,7 +101,7 @@ const Home = () => {
   return (
     <div className={classes.home}>
       <HelmetTitle />
-      {products.length ? <Banner banners={banners} /> : <BannerLoading />}
+      {products?.length ? <Banner banners={banners} /> : <BannerLoading />}
       {id && (
         <div
           initial={{ opacity: 0 }}
