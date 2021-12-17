@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Logo from '../../../assets/images/global/O.HI.O-logo-application.svg';
 import Button from '../../../components/Global/Button/Button.jsx';
 import classes from './Header.module.scss';
+
 const Header = () => {
   const location = useLocation();
   useEffect(() => {}, [location]);
