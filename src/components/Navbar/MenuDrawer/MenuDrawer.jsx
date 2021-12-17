@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import classes from './MenuDrawer.module.scss';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { openLoginModal } from '../../../store/index/indexAction';
@@ -12,6 +11,9 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import About from './About/About.jsx';
 import Categories from './Categories/Categories.jsx';
 import Cookie from 'js-cookie';
+
+import classes from './MenuDrawer.module.scss';
+
 const MenuDrawer = ({ onClick = () => {} }) => {
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();

@@ -2,11 +2,12 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PropTypes from 'prop-types';
-import classes from './ProductCard.module.scss';
 import { useHistory } from 'react-router-dom';
 import { addToFavorite, openLoginModal } from '../../../store/index/indexAction';
 import { discount } from '../../../lib/tools';
 import Skeleton from 'react-loading-skeleton';
+
+import classes from './ProductCard.module.scss';
 
 const ProductCardLoading = () => {
   return (

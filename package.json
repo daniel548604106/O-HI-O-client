@@ -1,6 +1,6 @@
 {
   "proxy": "http://localhost:3001",
-  "name": "react-shoe-ecommerce",
+  "name": "O.HI.O Client",
   "version": "0.1.0",
   "babel": {
     "env": {
