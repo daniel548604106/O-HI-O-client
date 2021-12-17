@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-route
 
 import allRoutes from './routes/allRoutes.js';
 
+import './App.scss';
+
 // Icon
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 
@@ -22,8 +24,6 @@ import { closeMenuDrawer } from './store/index/indexAction';
 // Plugins
 import { ToastContainer } from 'react-toastify';
 import { initGA, PageView } from '../src/lib/googleAnalytics';
-
-import './App.scss';
 
 const App = (props) => {
   const location = useLocation();
