@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 
-
 import allRoutes from './routes/allRoutes.js';
 
 // Icon
