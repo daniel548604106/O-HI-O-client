@@ -1,0 +1,49 @@
+.rootContainer {
+  position: relative;
+  @media (max-width: 500px) {
+    width: 100vw;
+  }
+}
+
+.icon {
+  display: none;
+  @media (max-width: 500px) {
+    display: inline-block;
+  }
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  z-index: 10;
+  width: 26px;
+  height: 26px;
+
+  fill: #f0f0f0;
+  stroke: white;
+  stroke-width: 20px;
+}
+
+.displayImage {
+  width: 100%;
+  padding-top: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.controlImage {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  margin-top: 10px;
+
+  img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &.active {
+      border: 2px solid #178fac;
+    }
+  }
+}

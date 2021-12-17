@@ -1,0 +1,31 @@
+.footerLayout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-gray);
+  padding: 30px;
+  margin-top: 50px;
+  img {
+    width: 150px;
+    height: 100px;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  p {
+    margin-left: 5px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.copyRight {
+  font-size: 14px;
+}

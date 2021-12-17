@@ -1,0 +1,24 @@
+.userMenuTabs {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 1px 1px 1px #ada9a9;
+  border-radius: 4px;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+  li {
+    padding: 5px;
+    a {
+      font-size: 14px;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: var(--primary-pink);
+      * {
+        color: var(--primary-pink);
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.feedbackRow {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  .feedbackRow {
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+    div {
+      width: 100%;
+    }
+
+    .name {
+      color: var(--primary-gray);
+      width: 200px;
+      span {
+        color: var(--primary-pink);
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    > img {
+      width: 50px;
+      margin-right: 20px;
+      height: 50px;
+    }
+    .commentImage {
+      width: 100%;
+      height: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noReview {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
+}

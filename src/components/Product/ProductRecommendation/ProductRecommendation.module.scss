@@ -1,0 +1,13 @@
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
+}
+
+.recommendationLayout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}

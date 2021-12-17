@@ -1,0 +1,97 @@
+.brandName {
+  font-size: 18px;
+  color: var(--primary-gray);
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+.productName {
+  font-size: 22px;
+  font-weight: bold;
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.hr {
+  margin-top: 20px;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.tags {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+
+  .discount {
+    margin-right: 10px;
+  }
+
+  span {
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid var(--primary-pink);
+  }
+  .discountPercentage {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: var(--primary-pink);
+    color: white;
+  }
+
+  .amountSaved {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: var(--primary-pink);
+  }
+}
+
+.priceRow {
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .price {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    .discountPrice {
+      margin-right: 10px;
+      font-size: 20px;
+      color: var(--primary-pink);
+    }
+
+    .fullPrice {
+      font-size: 18px;
+    }
+    .originalPrice {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: var(--primary-gray);
+    }
+  }
+
+  .brandOrigin {
+    @media (max-width: 500px) {
+      display: none;
+    }
+    p {
+      color: var(--primary-gray);
+      font-size: 12px;
+      a {
+        margin-left: 4px;
+        color: var(--primary-black);
+        cursor: pointer;
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

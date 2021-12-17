@@ -1,0 +1,47 @@
+.mySidebarLayout {
+  ul {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    @media (max-width: 800px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    li {
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+
+      flex-direction: column;
+      a {
+        padding: 10px;
+        &.active {
+          color: var(--primary-pink);
+          border-bottom: 2px solid var(--primary-pink);
+        }
+      }
+
+      > * {
+        font-size: 16px;
+        color: var(--primary-gray);
+        &:hover {
+          color: var(--primary-pink);
+        }
+      }
+    }
+  }
+}
+
+.options > * {
+  display: flex;
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--primary-gray);
+  flex-direction: column;
+  &:hover {
+    color: var(--primary-pink);
+  }
+}
