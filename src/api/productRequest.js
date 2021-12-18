@@ -1,19 +1,19 @@
-import axios from 'axios';
+import axiosInstance from '../lib/axios.js';
 
 export const getAllProducts = (query) => {
-  return axios.get(`/v1/products?${query}`);
+  return axiosInstance.get(`/v1/products?${query}`);
 };
 export const getDiscountedProducts = () => {
-  return axios.get('/v1/products/discount');
+  return axiosInstance.get('/v1/products/discount');
 };
 export const getProduct = (id) => {
-  return axios.get(`/v1/products/product/${id}`);
+  return axiosInstance.get(`/v1/products/product/${id}`);
 };
 
 export const getRecommendedProducts = () => {
-  return axios.get(`/v1/products/recommendation`);
+  return axiosInstance.get(`/v1/products/recommendation`);
 };
 
 export const getCollectionProducts = (collection) => {
-  return axios.get(`v1/products/collection/${collection}`);
+  return axiosInstance.get(`v1/products/collection/${collection}`);
 };

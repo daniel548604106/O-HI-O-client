@@ -1,8 +1,10 @@
-import axios from 'axios';
 import Cookie from 'js-cookie';
+
+import axiosInstance from '../lib/axios.js';
+
 const token = Cookie.get('token');
 export const patchChat = async (id) => {
-  return await axios.patch(
+  return await axiosInstance.patch(
     '/v1/chat',
     { id },
     {
@@ -14,14 +16,14 @@ export const patchChat = async (id) => {
 };
 
 export const getAllChats = async () => {
-  return axios.get('/v1/chat', {
+  return axiosInstance.get('/v1/chat', {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   });
 };
 export const getChat = async (chatId) => {
-  return axios.get(`/v1/chat/${chatId}`, {
+  return axiosInstance.get(`/v1/chat/${chatId}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

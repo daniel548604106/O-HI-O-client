@@ -1,10 +1,11 @@
-import axios from 'axios';
 import Cookie from 'js-cookie';
+
+import axiosInstance from '../lib/axios.js';
 
 const token = Cookie.get('token');
 
 export const patchMyData = (data) => {
-  return axios.patch('/v1/my', data, {
+  return axiosInstance.patch('/v1/my', data, {
     headers: {
       authorization: `Bearer ${token}`,
     },
@@ -12,7 +13,7 @@ export const patchMyData = (data) => {
 };
 
 export const patchMyPhoto = (data) => {
-  return axios.patch('/v1/my/photo', data, {
+  return axiosInstance.patch('/v1/my/photo', data, {
     headers: {
       authorization: `Bearer ${token}`,
     },

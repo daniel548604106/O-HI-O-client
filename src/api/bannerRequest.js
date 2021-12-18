@@ -1,5 +1,5 @@
-import axios from 'axios';
+import axiosInstance from '../lib/axios.js';
 
 export const getBanners = async () => {
-  return await axios.get(`/v1/banners`);
+  return await axiosInstance.get(`/v1/banners`);
 };

@@ -1,5 +1,5 @@
-import axios from 'axios';
+import axiosInstance from '../lib/axios.js';
 
 export const getSearchedProducts = (text) => {
-  return axios.get(`/v1/search?text=${text}`);
+  return axiosInstance.get(`/v1/search?text=${text}`);
 };

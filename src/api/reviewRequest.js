@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axiosInstance from '../lib/axios.js';
 
 const getReviews = async (productId) => {
-  return await axios.get(`/v1/reviews/${productId}`);
+  return await axiosInstance.get(`/v1/reviews/${productId}`);
 };
 
 export { getReviews };

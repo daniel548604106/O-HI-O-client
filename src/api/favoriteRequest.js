@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axiosInstance from '../lib/axios.js';
 
 export const addToFavorite = async (id, token, type) => {
-  return await axios.patch(
+  return await axiosInstance.patch(
     '/v1/favorite',
     { id, type },
     {
@@ -13,7 +13,7 @@ export const addToFavorite = async (id, token, type) => {
 };
 
 export const getFavList = async (token) => {
-  return await axios.get('/v1/favorite', {
+  return await axiosInstance.get('/v1/favorite', {
     headers: {
       Authorization: `Bearer ${token}`,
     },

@@ -1,8 +1,9 @@
-import axios from 'axios';
 import Cookie from 'js-cookie';
+
+import axiosInstance from '../lib/axios.js';
 const token = Cookie.get('token');
 export const postNewOrder = (data) => {
-  return axios.post('/v1/orders', data, {
+  return axiosInstance.post('/v1/orders', data, {
     headers: {
       authorization: `Bearer ${token}`,
     },
@@ -10,7 +11,7 @@ export const postNewOrder = (data) => {
 };
 
 export const getAllOrders = (data) => {
-  return axios.get('/v1/orders', {
+  return axiosInstance.get('/v1/orders', {
     headers: {
       Authorization: `Bearer ${token}`,
     },
