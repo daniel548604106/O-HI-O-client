@@ -1,9 +1,10 @@
+import Dropdown from 'components/Global/Dropdown/Dropdown.jsx';
+import Stars from 'components/Global/Stars/Stars.jsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Dropdown from '../../Global/Dropdown/Dropdown.jsx';
-import Stars from '../../Global/Stars/Stars.jsx';
 import classes from './ProductDescription.module.scss';
+
 const ProductDescription = ({ product, evaluationRef, productDescriptionRef, t, reviews }) => {
   return (
     <div style={{ width: '100%' }}>

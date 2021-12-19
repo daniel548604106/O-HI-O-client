@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from './RefundPolicy.module.scss';
+
 const RefundPolicy = () => {
   return (
     <div className={classes.policy}>

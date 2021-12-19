@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import classes from './CartSummary.module.scss';
+
 const CartSummary = ({ proceedToCheckout, subTotalPrice, totalPrice }) => {
   return (
     <div>

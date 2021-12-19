@@ -1,29 +1,25 @@
-import React, { useState, useEffect, Suspense } from 'react';
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
-
-import allRoutes from './routes/allRoutes.js';
-
 import './App.scss';
 
 // Icon
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
-
-// Component
-import Loader from './components/Global/Loader/Loader.jsx';
-import Header from './components/Navbar/Header.jsx';
-import MenuDrawer from './components/Navbar/MenuDrawer/MenuDrawer.jsx';
-import Footer from './components/Footer/Footer.jsx';
-import Chat from './components/Chat/Chat.jsx';
-import LoginModal from './components/Login/LoginModal.jsx';
-
+import React, { Suspense, useEffect, useState } from 'react';
 // Redux
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleChat } from './store/chat/chatAction';
-import { closeMenuDrawer } from './store/index/indexAction';
-
+import { Route, BrowserRouter as Router, Switch, useLocation } from 'react-router-dom';
 // Plugins
 import { ToastContainer } from 'react-toastify';
-import { initGA, PageView } from '../src/lib/googleAnalytics';
+
+import { PageView, initGA } from '../src/lib/googleAnalytics';
+import Chat from './components/Chat/Chat.jsx';
+import Footer from './components/Footer/Footer.jsx';
+// Component
+import Loader from './components/Global/Loader/Loader.jsx';
+import LoginModal from './components/Login/LoginModal.jsx';
+import Header from './components/Navbar/Header.jsx';
+import MenuDrawer from './components/Navbar/MenuDrawer/MenuDrawer.jsx';
+import allRoutes from './routes/allRoutes.js';
+import { toggleChat } from './store/chat/chatAction';
+import { closeMenuDrawer } from './store/index/indexAction';
 
 const App = (props) => {
   const location = useLocation();
@@ -69,7 +65,10 @@ const App = (props) => {
           newestOnTop={false}
           closeOnClick
         />
-        <div className={`menuDrawer ${isMenuDrawerOpen ? 'active' : ''}`}>
+        <div
+          onClick={() => dispatch(closeMenuDrawer())}
+          className={`menuDrawer ${isMenuDrawerOpen ? 'active' : ''}`}
+        >
           <MenuDrawer onClick={() => dispatch(closeMenuDrawer())} />
         </div>
         <LoginModal />
@@ -88,7 +87,10 @@ const App = (props) => {
 
         <div
           className="header"
-          style={{ top: hideHeader ? '-100%' : '', display: hideMainHeader ? 'hidden' : 'block' }}
+          style={{
+            top: hideHeader ? '-100%' : '',
+            display: hideMainHeader ? 'hidden' : 'block',
+          }}
         >
           <Header />
         </div>

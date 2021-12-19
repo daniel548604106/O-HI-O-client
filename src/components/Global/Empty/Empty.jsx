@@ -3,6 +3,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import classes from './Empty.module.scss';
+
 const Empty = ({ title }) => {
   const history = useHistory();
   const directTo = () => {

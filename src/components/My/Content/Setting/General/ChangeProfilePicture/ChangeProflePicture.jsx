@@ -1,9 +1,10 @@
+import { apiPatchMyPhoto } from 'api/index';
+import notify from 'lib/notification';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { apiPatchMyPhoto } from '../../../../../../api/index';
-import notify from '../../../../../../lib/notification';
 import classes from './ChangeProfilePicture.module.scss';
+
 const ChangeProflePicture = () => {
   const [uploadPicture, setUploadPicture] = useState('');
   const user = useSelector((state) => state.user.currentUser);

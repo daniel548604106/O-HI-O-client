@@ -1,8 +1,9 @@
+import { menuOptions } from 'lib/menuOptions';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { menuOptions } from '../../../lib/menuOptions';
 import classes from './NavMenu.module.scss';
+
 const NavMenu = () => {
   const history = useHistory();
 

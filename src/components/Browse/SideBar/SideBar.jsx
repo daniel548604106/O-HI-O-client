@@ -1,10 +1,11 @@
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import { menuOptions } from 'lib/menuOptions';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { menuOptions } from '../../../lib/menuOptions';
 import classes from './Sidebar.module.scss';
+
 const Sidebar = ({ categoryId }) => {
   const location = useLocation();
   const [activeCategory, setActiveCategory] = useState([]);

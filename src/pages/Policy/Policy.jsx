@@ -9,6 +9,7 @@ import Return from '../../components/Policy/Return/Return.jsx';
 import Selling from '../../components/Policy/Selling/Selling.jsx';
 import Service from '../../components/Policy/Service/Service.jsx';
 import classes from './Policy.module.scss';
+
 const Policy = () => {
   const history = useHistory();
   const handleTabChange = (idx, type) => {

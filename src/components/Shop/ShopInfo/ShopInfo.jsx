@@ -6,6 +6,7 @@ import { formatDate } from '../../../lib/tools';
 import { addToFavorite } from '../../../store/index/indexAction';
 import Button from '../../Global/Button/Button.jsx';
 import classes from './ShopInfo.module.scss';
+
 const ShopInfo = ({ shop }) => {
   const { user } = shop;
   const dispatch = useDispatch();

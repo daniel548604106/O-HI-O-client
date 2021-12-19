@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import classes from './SearchBar.module.scss';
+
 const SearchBar = ({ searchBarOpen }) => {
   const [searchInput, setSearchInput] = useState('');
   const history = useHistory();

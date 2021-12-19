@@ -2,13 +2,14 @@ import { Backdrop } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { closeLoginModal } from 'store/index/indexAction';
 
-import { closeLoginModal } from '../../store/index/indexAction';
 import Login from './Login/Login.jsx';
 import classes from './LoginModal.module.scss';
 import ResetPassword from './ResetPassword/ResetPassword.jsx';
 import Signup from './Signup/Signup.jsx';
 import SocialLogin from './SocialLogin/SocialLogin.jsx';
+
 const LoginModal = () => {
   const dispatch = useDispatch();
   const [loginState, setLoginState] = useState('welcome');

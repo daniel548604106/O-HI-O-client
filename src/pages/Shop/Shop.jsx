@@ -1,14 +1,14 @@
+import { apiGetShopInfo } from 'api/index';
+import Tabs from 'components/Global/Tabs/Tabs.jsx';
+import ProductList from 'components/Shop/ProductList/ProductList.jsx';
+import RecommendedDesign from 'components/Shop/RecommendedDesign/RecommendedDesign.jsx';
+import RefundPolicy from 'components/Shop/RefundPolicy/RefundPolicy.jsx';
+import ShopInfo from 'components/Shop/ShopInfo/ShopInfo.jsx';
+import Sidebar from 'components/Shop/Sidebar/Sidebar.jsx';
+import notify from 'lib/notification';
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
-import { apiGetShopInfo } from '../../api/index';
-import Tabs from '../../components/Global/Tabs/Tabs.jsx';
-import ProductList from '../../components/Shop/ProductList/ProductList.jsx';
-import RecommendedDesign from '../../components/Shop/RecommendedDesign/RecommendedDesign.jsx';
-import RefundPolicy from '../../components/Shop/RefundPolicy/RefundPolicy.jsx';
-import ShopInfo from '../../components/Shop/ShopInfo/ShopInfo.jsx';
-import Sidebar from '../../components/Shop/Sidebar/Sidebar.jsx';
-import notify from '../../lib/notification';
 import classes from './Shop.module.scss';
 
 const tabs = [

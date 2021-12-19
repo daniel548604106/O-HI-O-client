@@ -11,6 +11,7 @@ import { updateCheckoutProgress } from '../../../store/cart/cartAction';
 import { resetCartItems } from '../../../store/cart/cartAction';
 import { resetCheckoutList } from '../../../store/checkout/checkoutAction';
 import classes from './Confirm.module.scss';
+
 const CartConfirm = () => {
   const dispatch = useDispatch();
   const history = useHistory();

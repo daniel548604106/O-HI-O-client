@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { addToFavorite, openLoginModal } from 'store/index/indexAction';
 
-import { addToFavorite, openLoginModal } from '../../../store/index/indexAction';
 import classes from './ShopCard.module.scss';
+
 const ShopCard = ({ shop }) => {
   const dispatch = useDispatch();
   const history = useHistory();

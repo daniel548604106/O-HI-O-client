@@ -7,6 +7,7 @@ import { useHistory, useLocation, useParams } from 'react-router-dom';
 import { apiPostOauthLogin } from '../../api/index';
 import Loader from '../../components/Global/Loader/Loader.jsx';
 import { setUserLoggedIn } from '../../store/user/userAction';
+
 const OAuth = () => {
   const history = useHistory();
   const dispatch = useDispatch();

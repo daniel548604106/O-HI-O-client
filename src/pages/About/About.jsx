@@ -2,6 +2,7 @@ import React from 'react';
 
 import Logo from '../../assets/images/global/O.HI.O-footer.svg';
 import classes from './About.module.scss';
+
 const About = () => {
   return (
     <div className={classes.about}>

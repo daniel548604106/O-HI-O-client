@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from './Advantage.module.scss';
+
 const Advantage = () => {
   const items = [
     {

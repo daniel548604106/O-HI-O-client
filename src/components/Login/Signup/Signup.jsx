@@ -1,12 +1,13 @@
 import Cookie from 'js-cookie';
+import notify from 'lib/notification';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { closeLoginModal } from 'store/index/indexAction';
+import { setUserLoggedIn } from 'store/user/userAction';
 
-import notify from '../../../lib/notification';
-import { closeLoginModal } from '../../../store/index/indexAction';
-import { setUserLoggedIn } from '../../../store/user/userAction';
 import classes from './Signup.module.scss';
+
 const SignUp = ({ setLoginState }) => {
   const dispatch = useDispatch();
   const [account, setAccount] = useState('');

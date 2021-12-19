@@ -9,6 +9,7 @@ import { indexReducer } from './index/indexReducer';
 import { productListReducer } from './product/productReducer';
 import { SET_USER_LOGOUT } from './reducerTypes';
 import userReducer from './user/userReducer';
+
 const persistConfig = {
   key: 'root',
   storage,

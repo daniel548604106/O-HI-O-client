@@ -7,6 +7,7 @@ import Empty from '../../components/Global/Empty/Empty.jsx';
 import ShopCard from '../../components/Global/ShopCard/ShopCard.jsx';
 import Tabs from '../../components/Global/Tabs/Tabs.jsx';
 import classes from './Favorite.module.scss';
+
 const Favorite = () => {
   const location = useLocation();
   const favoriteProducts = useSelector((state) => state.global.favoriteProducts);

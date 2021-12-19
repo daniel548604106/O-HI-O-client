@@ -1,6 +1,7 @@
 import Cookie from 'js-cookie';
 
 import axiosInstance from '../lib/axios.js';
+
 const token = Cookie.get('token');
 export const postNewOrder = (data) => {
   return axiosInstance.post('/v1/orders', data, {

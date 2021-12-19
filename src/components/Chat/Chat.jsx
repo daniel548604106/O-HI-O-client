@@ -6,6 +6,7 @@ import classes from './Chat.module.scss';
 import ChatHeader from './ChatHeader/ChatHeader.jsx';
 import ChatList from './ChatList/ChatList.jsx';
 import ChatRoom from './ChatRoom/ChatRoom.jsx';
+
 const Chat = () => {
   const activeChatIndex = useSelector((state) => state.chat.activeChat);
   const showChat = useSelector((state) => state.chat.showChat);

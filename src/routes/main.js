@@ -1,19 +1,19 @@
 import React from 'react';
-const Product = React.lazy(() => import('../pages/Products/_Product/_Product.jsx'));
-const Cart = React.lazy(() => import('../pages/Cart/Cart.jsx'));
-const Search = React.lazy(() => import('../pages/Search/Search.jsx'));
-const Favorite = React.lazy(() => import('../pages/Favorite/Favorite.jsx'));
-const Shop = React.lazy(() => import('../pages/Shop/Shop.jsx'));
-const Browse = React.lazy(() => import('../pages/Browse/Browse.jsx'));
-const My = React.lazy(() => import('../pages/My/My.jsx'));
-const Home = React.lazy(() => import('../pages/Home/Home.jsx'));
-const OAuth = React.lazy(() => import('../pages/OAuth/OAuth.jsx'));
-const Application = React.lazy(() => import('../pages/Application/Application.jsx'));
-const Latest = React.lazy(() => import('../pages/Latest/Latest.jsx'));
-const Policy = React.lazy(() => import('../pages/Policy/Policy.jsx'));
-const About = React.lazy(() => import('../pages/About/About.jsx'));
-const Topic = React.lazy(() => import('../pages/Topic/Topic.jsx'));
-const Beauty = React.lazy(() => import('../pages/Collection/Beauty/Beauty.jsx'));
+const Product = React.lazy(() => import('pages/Products/_Product/_Product.jsx'));
+const Cart = React.lazy(() => import('pages/Cart/Cart.jsx'));
+const Search = React.lazy(() => import('pages/Search/Search.jsx'));
+const Favorite = React.lazy(() => import('pages/Favorite/Favorite.jsx'));
+const Shop = React.lazy(() => import('pages/Shop/Shop.jsx'));
+const Browse = React.lazy(() => import('pages/Browse/Browse.jsx'));
+const My = React.lazy(() => import('pages/My/My.jsx'));
+const Home = React.lazy(() => import('pages/Home/Home.jsx'));
+const OAuth = React.lazy(() => import('pages/OAuth/OAuth.jsx'));
+const Application = React.lazy(() => import('pages/Application/Application.jsx'));
+const Latest = React.lazy(() => import('pages/Latest/Latest.jsx'));
+const Policy = React.lazy(() => import('pages/Policy/Policy.jsx'));
+const About = React.lazy(() => import('pages/About/About.jsx'));
+const Topic = React.lazy(() => import('pages/Topic/Topic.jsx'));
+const Beauty = React.lazy(() => import('pages/Collection/Beauty/Beauty.jsx'));
 
 export default [
   {
@@ -90,5 +90,10 @@ export default [
     path: '/application',
     exact: true,
     component: Application,
+  },
+  {
+    path: '/topic',
+    exact: true,
+    component: Topic,
   },
 ];

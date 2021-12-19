@@ -1,6 +1,6 @@
+import Hero from 'components/Topic/Hero/Hero.jsx';
 import React from 'react';
 
-import Hero from '../../components/Topic/Hero/Hero.jsx';
 import classes from './Topic.module.scss';
 
 const Topic = () => {

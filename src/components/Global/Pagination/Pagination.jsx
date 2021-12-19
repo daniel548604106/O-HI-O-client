@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 
 import classes from './Pagination.module.scss';
+
 const Pagination = ({ currentPage, setCurrentPage, totalPage }) => {
   const [paginationArray, setPaginationArray] = useState([]);
 

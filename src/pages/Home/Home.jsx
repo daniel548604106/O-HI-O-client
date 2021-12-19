@@ -27,7 +27,7 @@ const Home = () => {
   const [banners, setBanners] = useState([]);
   const [discountedProducts, setDiscountedProducts] = useState([]);
   const [recommendedProducts, setRecommendedProducts] = useState([]);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   let { id } = useParams();
 
@@ -101,7 +101,7 @@ const Home = () => {
   return (
     <div className={classes.home}>
       <HelmetTitle />
-      {products?.length ? <Banner banners={banners} /> : <BannerLoading />}
+      {products.length ? <Banner banners={banners} /> : <BannerLoading />}
       {id && (
         <div
           initial={{ opacity: 0 }}

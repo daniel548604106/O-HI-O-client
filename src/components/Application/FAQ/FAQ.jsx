@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import classes from './FAQ.module.scss';
+
 const FAQ = () => {
   const [active, setActive] = useState('-1');
   const handleChangeActive = (index) => {

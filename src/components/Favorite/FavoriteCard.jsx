@@ -1,12 +1,12 @@
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { discount } from 'lib/tools';
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { addToFavorite, openLoginModal } from 'store/index/indexAction.js';
 
-import { discount } from '../../lib/tools';
-import { addToFavorite, openLoginModal } from '../../store/index/indexAction.js';
 import classes from './FavoriteCard.module.scss';
 
 const ProductCardLoading = () => {

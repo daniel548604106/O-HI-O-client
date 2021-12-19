@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import classes from './Notification.module.scss';
+
 const Notification = ({ title }) => {
   return (
     <div className={classes.notificationBg}>

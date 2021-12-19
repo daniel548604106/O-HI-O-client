@@ -1,9 +1,11 @@
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { persistStore } from 'redux-persist';
-import reducers from './rootReducer';
 import logger from 'redux-logger';
+import { persistStore } from 'redux-persist';
+import thunk from 'redux-thunk';
+
+import reducers from './rootReducer';
+
 const initialState = {};
 const middleware = [thunk];
 

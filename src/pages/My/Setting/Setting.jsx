@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import About from '../../../components/My/Content/Setting/About/About.jsx';
 import General from '../../../components/My/Content/Setting/General/General.jsx';
+
 const Setting = () => {
   const location = useLocation();
 

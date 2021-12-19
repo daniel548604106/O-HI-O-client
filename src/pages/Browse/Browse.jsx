@@ -1,14 +1,14 @@
+import { apiGetAllProducts } from 'api/index';
+import FilterOverlay from 'components/Browse/FilterOverlay/FilterOverlay.jsx';
+import MainContent from 'components/Browse/MainContent/MainContent.jsx';
+import Sidebar from 'components/Browse/SideBar/SideBar.jsx';
+import { menuOptions } from 'lib/menuOptions';
+import notify from 'lib/notification.js';
 import qs from 'query-string';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-import { apiGetAllProducts } from '../../api/index';
-import FilterOverlay from '../../components/Browse/FilterOverlay/FilterOverlay.jsx';
-import MainContent from '../../components/Browse/MainContent/MainContent.jsx';
-import Sidebar from '../../components/Browse/SideBar/SideBar.jsx';
-import { menuOptions } from '../../lib/menuOptions';
-import notify from '../../lib/notification.js';
 import classes from './Browse.module.scss';
 
 const Browse = () => {
@@ -51,7 +51,7 @@ const Browse = () => {
       }
     };
     getProducts();
-  }, [currentPage, location.search]);
+  }, [currentPage, location.search, history, location.pathname]);
   return (
     <div className={classes.browseLayout}>
       <div className={`${classes.filterLayout}  ${filterShow && classes.active}`}>

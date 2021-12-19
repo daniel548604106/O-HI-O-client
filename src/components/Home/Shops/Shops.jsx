@@ -3,6 +3,7 @@ import React from 'react';
 
 import ShopCard from '../../Global/ShopCard/ShopCard.jsx';
 import classes from './Shops.module.scss';
+
 const Shops = ({ t, shops }) => {
   return (
     <div className={classes.shopCardLayout}>

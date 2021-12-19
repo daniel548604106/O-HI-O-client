@@ -1,7 +1,9 @@
+import Button from 'components/Global/Button/Button.jsx';
 import React, { useEffect, useState } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
+
 import classes from './Complete.module.scss';
-import { useParams, useHistory } from 'react-router-dom';
-import Button from '../../../components/Global/Button/Button.jsx';
+
 const Complete = () => {
   const location = useParams();
   const history = useHistory();

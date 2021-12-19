@@ -3,6 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import classes from './ShoppingList.module.scss';
+
 const OrderList = ({ checkoutList }) => {
   const total = useSelector((state) => state.checkout.total);
   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
 import classes from './Refund.module.scss';
+
 const Refund = () => {
   const location = useLocation();
   const history = useHistory();

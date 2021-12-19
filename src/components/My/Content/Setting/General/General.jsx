@@ -1,14 +1,15 @@
+import { apiPatchMyData } from 'api/index';
+import Button from 'components/Global/Button/Button.jsx';
+import Reminder from 'components/Global/Reminder/Reminder.jsx';
+import notify from 'lib/notification';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { setUserLoggedIn } from 'store/user/userAction';
 
-import { apiPatchMyData } from '../../../../../api/index';
-import notify from '../../../../../lib/notification';
-import { setUserLoggedIn } from '../../../../../store/user/userAction';
-import Button from '../../../../Global/Button/Button.jsx';
-import Reminder from '../../../../Global/Reminder/Reminder.jsx';
 import ChangeProfilePicture from './ChangeProfilePicture/ChangeProflePicture.jsx';
 import classes from './General.module.scss';
 import LanguagePreference from './LanguagePreference/LanguagePreference.jsx';
+
 const _ = require('lodash');
 const General = () => {
   const dispatch = useDispatch();

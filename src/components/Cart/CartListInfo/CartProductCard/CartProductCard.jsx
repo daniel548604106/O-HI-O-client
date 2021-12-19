@@ -2,9 +2,10 @@ import CloseIcon from '@material-ui/icons/Close';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { removeItemFromCart, updateCartItemQuantity } from 'store/cart/cartAction';
 
-import { removeItemFromCart, updateCartItemQuantity } from '../../../../store/cart/cartAction';
 import classes from './CardProductCard.module.scss';
+
 const lodash = require('lodash');
 const CartProductCard = ({ item, idx, checkoutList, setCheckoutList, isAllChecked }) => {
   const dispatch = useDispatch();

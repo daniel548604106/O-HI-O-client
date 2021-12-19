@@ -1,9 +1,9 @@
+import { apiGetSearchedProducts } from 'api/index';
+import Content from 'components/Search/Content/Content.jsx';
+import notify from 'lib/notification';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { apiGetSearchedProducts } from '../../api/index';
-import Content from '../../components/Search/Content/Content.jsx';
-import notify from '../../lib/notification';
 import classes from './Search.module.scss';
 
 const Search = () => {

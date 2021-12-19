@@ -1,12 +1,13 @@
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import LanguageIcon from '@material-ui/icons/Language';
+import Title from 'components/Global/Menu/Title/Title.jsx';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { setUserLogout } from 'store/user/userAction';
 
-import { setUserLogout } from '../../../../store/user/userAction';
-import Title from '../../../Global/Menu/Title/Title.jsx';
 import classes from './About.module.scss';
+
 const About = () => {
   const [language, setLanguage] = useState('繁體中文(台灣)');
   const isUserLoggedIn = useSelector((state) => state.user.isUserLoggedIn);

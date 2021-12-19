@@ -4,6 +4,15 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
+  plugins: [
+    // ...
+    'react-hooks',
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  },
   env: {
     es6: true,
     node: true,
@@ -17,16 +26,6 @@ module.exports = {
     },
   },
   ignorePatterns: ['/node_modules/**', '/build/**'],
-  rules: {
-    'no-unused-vars': ['warn', { args: 'none', argsIgnorePattern: 'req|res|next|val' }],
-    'prettier/prettier': [
-      'warn',
-      {
-        endOfLine: 'auto',
-      },
-    ],
-    'no-console': 1,
-  },
   settings: {
     react: {
       version: 'detect',

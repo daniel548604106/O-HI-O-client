@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import io from 'socket.io-client';
 
 import classes from './ChatRoom.module.scss';
+
 let socket;
 const connectionOptions = {
   'force new connection': true,

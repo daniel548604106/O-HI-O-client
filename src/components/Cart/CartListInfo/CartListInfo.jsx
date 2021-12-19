@@ -1,19 +1,16 @@
+import Empty from 'components/Global/Empty/Empty.jsx';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { updateCheckoutProgress } from 'store/cart/cartAction';
+import { addItemToCheckoutList, updateSubtotal, updateTotal } from 'store/checkout/checkoutAction';
 
-import { updateCheckoutProgress } from '../../../store/cart/cartAction';
-import {
-  addItemToCheckoutList,
-  updateSubtotal,
-  updateTotal,
-} from '../../../store/checkout/checkoutAction';
-import Empty from '../../Global/Empty/Empty.jsx';
 import classes from './CartListInfo.module.scss';
 import CartProductCard from './CartProductCard/CartProductCard.jsx';
 import CartSummary from './CartSummary/CartSummary.jsx';
 import MobileCheckoutButton from './MobileCheckoutButton/MobileCheckoutButton.jsx';
+
 const CartListInfo = ({ cartItems }) => {
   const [checkoutList, setCheckoutList] = useState([]);
   const [isAllChecked, setIsAllChecked] = useState(true);

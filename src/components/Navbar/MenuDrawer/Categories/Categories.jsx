@@ -1,10 +1,11 @@
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Title from 'components/Global/Menu/Title/Title.jsx';
+import { menuOptions } from 'lib/menuOptions';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { menuOptions } from '../../../../lib/menuOptions';
-import Title from '../../../Global/Menu/Title/Title.jsx';
 import classes from './Categories.module.scss';
+
 const Categories = () => {
   const history = useHistory();
   const [activeCategory, setActiveCategory] = useState(-1);

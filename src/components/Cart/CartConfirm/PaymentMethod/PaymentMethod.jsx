@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import classes from './PaymentMethod.module.scss';
+
 const PaymentMethod = ({ checkoutDetail }) => {
   const { personalInfo, deliveryMethod, paymentMethod } = checkoutDetail;
   if (checkoutDetail && personalInfo) {

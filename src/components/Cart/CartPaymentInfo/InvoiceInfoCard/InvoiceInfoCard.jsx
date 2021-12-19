@@ -1,9 +1,11 @@
+import { retrieveMethods } from 'lib/checkoutOptions';
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
+
+import DonateInvoiceTab from './DonateInvoiceTab/DonateInvoiceTab.jsx';
 import classes from './InvoiceInfoCard.module.scss';
 import UnifiedInvoiceTab from './UnifiedInvoiceTab/UnifiedInvoiceTab.jsx';
-import DonateInvoiceTab from './DonateInvoiceTab/DonateInvoiceTab.jsx';
-import { retrieveMethods } from '../../../../lib/checkoutOptions';
-import PropTypes from 'prop-types';
+
 const invoiceType = [
   {
     name: '電子發票',
