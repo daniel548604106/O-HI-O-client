@@ -1,13 +1,13 @@
+import Disclaimer from '@/Components/Policy/Disclaimer/Disclaimer.jsx';
+import IntellectualProperty from '@/Components/Policy/IntellectualProperty/IntellectualProperty.jsx';
+import Privacy from '@/Components/Policy/Privacy/Privacy.jsx';
+import Return from '@/Components/Policy/Return/Return.jsx';
+import Selling from '@/Components/Policy/Selling/Selling.jsx';
+import Service from '@/Components/Policy/Service/Service.jsx';
 import qs from 'query-string';
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 
-import Disclaimer from '../../components/Policy/Disclaimer/Disclaimer.jsx';
-import IntellectualProperty from '../../components/Policy/IntellectualProperty/IntellectualProperty.jsx';
-import Privacy from '../../components/Policy/Privacy/Privacy.jsx';
-import Return from '../../components/Policy/Return/Return.jsx';
-import Selling from '../../components/Policy/Selling/Selling.jsx';
-import Service from '../../components/Policy/Service/Service.jsx';
 import classes from './Policy.module.scss';
 
 const Policy = () => {

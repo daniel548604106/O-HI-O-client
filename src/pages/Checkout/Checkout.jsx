@@ -1,10 +1,10 @@
 import './Checkout.scss';
 
+import StripeButton from '@/Components/StripeButton/StripeButton.jsx';
 import { Divider } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import StripeButton from '../../components/StripeButton/StripeButton.jsx';
 const TotalInfo = ({ total }) => (
   <div className="card-total">
     <div className="card-total-header">訂單摘要</div>

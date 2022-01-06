@@ -1,3 +1,8 @@
+import HelmetTitle from '@/Components/Global/HelmetTitle/HelmetTitle.jsx';
+import BannerLoading from '@/Components/Global/SkeletonLoading/BannerLoading.jsx';
+import Banner from '@/Components/Home/Banner/Banner.jsx';
+import Cards from '@/Components/Home/Cards/Cards.jsx';
+import Shop from '@/Components/Home/Shops/Shops.jsx';
 import Cookie from 'js-cookie';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -11,11 +16,6 @@ import {
   apiGetHotShop,
   apiGetRecommendedProducts,
 } from '../../api/index';
-import HelmetTitle from '../../components/Global/HelmetTitle/HelmetTitle.jsx';
-import BannerLoading from '../../components/Global/SkeletonLoading/BannerLoading.jsx';
-import Banner from '../../components/Home/Banner/Banner.jsx';
-import Cards from '../../components/Home/Cards/Cards.jsx';
-import Shop from '../../components/Home/Shops/Shops.jsx';
 import { getFavList } from '../../store/index/indexAction';
 import Product from '../Products/_Product/_Product.jsx';
 import classes from './Home.module.scss';

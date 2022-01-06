@@ -1,16 +1,16 @@
 import 'aos/dist/aos.css';
 
+import Advantage from '@/Components/Application/Advantage/Advantage.jsx';
+import AvailableProducts from '@/Components/Application/AvailableProducts/AvailableProducts.jsx';
+import Cooperation from '@/Components/Application/Cooperation/Cooperation.jsx';
+import CTA from '@/Components/Application/CTA/CTA.jsx';
+import FAQ from '@/Components/Application/FAQ/FAQ.jsx';
+import Header from '@/Components/Application/Header/Header.jsx';
+import Hero from '@/Components/Application/Hero/Hero.jsx';
 import AOS from 'aos';
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Advantage from '../../components/Application/Advantage/Advantage.jsx';
-import AvailableProducts from '../../components/Application/AvailableProducts/AvailableProducts.jsx';
-import Cooperation from '../../components/Application/Cooperation/Cooperation.jsx';
-import CTA from '../../components/Application/CTA/CTA.jsx';
-import FAQ from '../../components/Application/FAQ/FAQ.jsx';
-import Header from '../../components/Application/Header/Header.jsx';
-import Hero from '../../components/Application/Hero/Hero.jsx';
 import classes from './Application.module.scss';
 
 const Application = () => {

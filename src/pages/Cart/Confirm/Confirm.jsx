@@ -1,11 +1,11 @@
+import PaymentMethod from '@/Components/Cart/CartConfirm/PaymentMethod/PaymentMethod.jsx';
+import ShoppingList from '@/Components/Cart/CartConfirm/ShoppingList/ShoppingList.jsx';
+import Button from '@/Components/Global/Button/Button.jsx';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { apiPostNewOrder } from '../../../api/index';
-import PaymentMethod from '../../../components/Cart/CartConfirm/PaymentMethod/PaymentMethod.jsx';
-import ShoppingList from '../../../components/Cart/CartConfirm/ShoppingList/ShoppingList.jsx';
-import Button from '../../../components/Global/Button/Button.jsx';
 import notify from '../../../lib/notification';
 import { updateCheckoutProgress } from '../../../store/cart/cartAction';
 import { resetCartItems } from '../../../store/cart/cartAction';

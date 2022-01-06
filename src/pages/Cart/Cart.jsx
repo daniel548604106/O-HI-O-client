@@ -1,9 +1,9 @@
+import CartListInfo from '@/Components/Cart/CartListInfo/CartListInfo.jsx';
+import CartProgressBar from '@/Components/Cart/CartProgressBar/CartProgressBar.jsx';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
-import CartListInfo from '../../components/Cart/CartListInfo/CartListInfo.jsx';
-import CartProgressBar from '../../components/Cart/CartProgressBar/CartProgressBar.jsx';
 import classes from './Cart.module.scss';
 import CartComplete from './Complete/Complete.jsx';
 import CartConfirm from './Confirm/Confirm.jsx';

@@ -1,3 +1,11 @@
+import HelmetTitle from '@/Components/Global/HelmetTitle/HelmetTitle.jsx';
+import DesignShopInfo from '@/Components/Product/DesignShopInfo/DesignShopInfo.jsx';
+import ProductBanner from '@/Components/Product/ProductBanner/ProductBanner.jsx';
+import ProductCTA from '@/Components/Product/ProductCTA/ProductCTA.jsx';
+import ProductDescription from '@/Components/Product/ProductDescription/ProductDescription.jsx';
+import ProductDisplay from '@/Components/Product/ProductDisplay/ProductDisplay.jsx';
+import ProductInfo from '@/Components/Product/ProductInfo/ProductInfo.jsx';
+import ProductRecommendation from '@/Components/Product/ProductRecommendation/ProductRecommendation.jsx';
 import PropTypes from 'prop-types';
 import React, { createRef, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -6,14 +14,6 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import { apiGetProduct, apiGetRecommendedProducts, apiGetReviews } from '../../../api/index';
-import HelmetTitle from '../../../components/Global/HelmetTitle/HelmetTitle.jsx';
-import DesignShopInfo from '../../../components/Product/DesignShopInfo/DesignShopInfo.jsx';
-import ProductBanner from '../../../components/Product/ProductBanner/ProductBanner.jsx';
-import ProductCTA from '../../../components/Product/ProductCTA/ProductCTA.jsx';
-import ProductDescription from '../../../components/Product/ProductDescription/ProductDescription.jsx';
-import ProductDisplay from '../../../components/Product/ProductDisplay/ProductDisplay.jsx';
-import ProductInfo from '../../../components/Product/ProductInfo/ProductInfo.jsx';
-import ProductRecommendation from '../../../components/Product/ProductRecommendation/ProductRecommendation.jsx';
 import { listProducts } from '../../../store/product/productAction';
 import classes from './_Product.module.scss';
 

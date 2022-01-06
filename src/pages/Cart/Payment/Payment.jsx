@@ -1,12 +1,12 @@
+import CardPaymentOrdererInfoCard from '@/Components/Cart/CartPaymentInfo/CardPaymentOrdererInfoCard/CardPaymentOrdererInfoCard.jsx';
+import CardPaymentInfoCard from '@/Components/Cart/CartPaymentInfo/CartPaymentInfoCard/CartPaymentInfoCard.jsx';
+import InvoiceInfoCard from '@/Components/Cart/CartPaymentInfo/InvoiceInfoCard/InvoiceInfoCard.jsx';
+import Button from '@/Components/Global/Button/Button.jsx';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-import CardPaymentOrdererInfoCard from '../../../components/Cart/CartPaymentInfo/CardPaymentOrdererInfoCard/CardPaymentOrdererInfoCard.jsx';
-import CardPaymentInfoCard from '../../../components/Cart/CartPaymentInfo/CartPaymentInfoCard/CartPaymentInfoCard.jsx';
-import InvoiceInfoCard from '../../../components/Cart/CartPaymentInfo/InvoiceInfoCard/InvoiceInfoCard.jsx';
-import Button from '../../../components/Global/Button/Button.jsx';
 import { deliveryType, paymentType } from '../../../lib/checkoutOptions';
 import { updateCheckoutProgress } from '../../../store/cart/cartAction';
 import { updateCheckoutDetail } from '../../../store/checkout/checkoutAction';

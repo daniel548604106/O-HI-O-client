@@ -1,3 +1,4 @@
+import Loader from '@/Components/Global/Loader/Loader.jsx';
 import Cookie from 'js-cookie';
 import qs from 'query-string';
 import React, { useEffect } from 'react';
@@ -5,7 +6,6 @@ import { useDispatch } from 'react-redux';
 import { useHistory, useLocation, useParams } from 'react-router-dom';
 
 import { apiPostOauthLogin } from '../../api/index';
-import Loader from '../../components/Global/Loader/Loader.jsx';
 import { setUserLoggedIn } from '../../store/user/userAction';
 
 const OAuth = () => {

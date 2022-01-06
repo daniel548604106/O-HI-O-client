@@ -1,8 +1,8 @@
+import ProductList from '@/Components/Latest/ProductList/ProductList.jsx';
+import SidebarFilter from '@/Components/Latest/SidebarFilter/SidebarFilter.jsx';
 import React, { useEffect, useState } from 'react';
 
 import { apiGetAllProducts } from '../../api/index';
-import ProductList from '../../components/Latest/ProductList/ProductList.jsx';
-import SidebarFilter from '../../components/Latest/SidebarFilter/SidebarFilter.jsx';
 import styles from './index.module.scss';
 
 const Latest = () => {

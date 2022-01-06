@@ -1,11 +1,11 @@
+import FavoriteCard from '@/Components/Favorite/FavoriteCard.jsx';
+import Empty from '@/Components/Global/Empty/Empty.jsx';
+import ShopCard from '@/Components/Global/ShopCard/ShopCard.jsx';
+import Tabs from '@/Components/Global/Tabs/Tabs.jsx';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
-import FavoriteCard from '../../components/Favorite/FavoriteCard.jsx';
-import Empty from '../../components/Global/Empty/Empty.jsx';
-import ShopCard from '../../components/Global/ShopCard/ShopCard.jsx';
-import Tabs from '../../components/Global/Tabs/Tabs.jsx';
 import classes from './Favorite.module.scss';
 
 const Favorite = () => {
